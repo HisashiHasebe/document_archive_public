@@ -1,0 +1,38 @@
+/* ---------------------------------------------
+*   c-chapter
+--------------------------------------------- */
+.c-chapter {
+    margin-bottom: 30px;
+
+    &__container {
+        width: $contents-width-pc * 1px;
+        margin: 0 auto;
+    }
+
+    &__head {
+        margin-bottom: 15px;
+    }
+
+    &__body {
+        padding: 0 10px;
+    }
+}
+
+/* ---------------------------------------------
+*   c-chapter-docs
+--------------------------------------------- */
+.c-chapter-docs {
+
+    &__txt {
+        color: $theme5;
+        font-family: $ff-karla;
+        font-weight: 400;
+        font-size: pxtorem(18, 'pc');
+        line-height: 1.4;
+
+        @at-root .is-dark & {
+            color: $white1;
+        }
+    }
+
+}

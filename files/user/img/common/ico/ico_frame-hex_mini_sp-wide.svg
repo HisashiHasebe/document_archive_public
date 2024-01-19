@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="596" height="496.927" viewBox="0 0 596 496.927">
+  <g id="グループ_5188" data-name="グループ 5188" transform="translate(-79 -3822)">
+    <g id="グループ_5185" data-name="グループ 5185">
+      <g id="グループ_5186" data-name="グループ 5186">
+        <g id="グループ_5187" data-name="グループ 5187">
+          <g id="長方形_3472" data-name="長方形 3472" transform="translate(81 3824.414)" fill="#fff" stroke="#682ae9" stroke-width="2">
+            <rect width="590" height="492.019" stroke="none"/>
+            <rect x="1" y="1" width="588" height="490.019" fill="none"/>
+          </g>
+          <path id="パス_8780" data-name="パス 8780" d="M0,0,44,44H0Z" transform="translate(675 3866) rotate(180)" fill="#fff"/>
+          <path id="パス_8779" data-name="パス 8779" d="M0,0,44,44H0Z" transform="translate(629 4318.927) rotate(-90)" fill="#fff"/>
+          <path id="パス_8778" data-name="パス 8778" d="M0,0,44,44H0Z" transform="translate(79 4274.927)" fill="#fff"/>
+          <path id="パス_8777" data-name="パス 8777" d="M0,0,44,44H0Z" transform="translate(123 3822) rotate(90)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <line id="線_46" data-name="線 46" y1="40" x2="40" transform="translate(81.5 3824.914)" fill="none" stroke="#682ae9" stroke-width="2"/>
+    <line id="線_47" data-name="線 47" y1="40" x2="40" transform="translate(120.5 4274.927) rotate(90)" fill="none" stroke="#682ae9" stroke-width="2" opacity="0.9"/>
+    <line id="線_48" data-name="線 48" x2="36.5" y2="37" transform="translate(633 3824.914)" fill="none" stroke="#682ae9" stroke-width="2"/>
+    <line id="線_49" data-name="線 49" x1="38.75" y2="39.244" transform="translate(631.75 4275.933)" fill="none" stroke="#682ae9" stroke-width="2"/>
+  </g>
+</svg>

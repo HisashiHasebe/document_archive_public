@@ -1,0 +1,255 @@
+/* ---------------------------------------------
+*   c-block-conversion
+--------------------------------------------- */
+.c-block-conversion {
+    $host: &;
+    background: $black1 50% 50% no-repeat;
+    background-size: cover;
+    color: $white1;
+
+    &--photo {
+        background-image: url(/files/user/img/membership/bg_img_conversion.jpg);
+
+          @media screen and (max-width: #{$breakpoint-sp}px) {
+             background-image: url(/files/user/img/membership/bg_img_conversion.png);
+          }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: $design-width-pc * 1px;
+        padding-top: pxtorem(70,'pc');
+        padding-right: pxtorem(160,'pc');
+        padding-bottom: pxtorem(70,'pc');
+        padding-left: pxtorem(96,'pc');
+        margin-right: auto;
+        margin-left: auto;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            display: block;
+            padding-top: pxtovw(96, 'sp');
+            padding-right: pxtovw(48, 'sp');
+            padding-bottom: pxtovw(128, 'sp');
+            padding-left: pxtovw(48, 'sp');
+        }
+    }
+
+    &__head {
+        width: pxtorem(568, 'pc');
+        padding-top: pxtorem(25, 'pc');
+
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+            padding-top: 0;
+         }
+    }
+
+    &__body {
+    }
+
+    &__ttl {
+        height: pxtorem(67, 'pc');
+        font-weight: bold;
+        font-size: pxtorem(48, 'pc');
+
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            line-height: 1.4;
+            height: pxtovw(134, 'sp');
+         }
+    }
+
+    &__txt {
+        border-top: 2px solid $white1;
+        line-height: 2.0;
+        font-size: pxtorem(16, 'pc');
+        white-space: nowrap;
+        padding-top: pxtorem(10, 'pc');
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            white-space: normal;
+            padding-top: pxtovw(30, 'sp');
+         }
+
+        @media screen and (max-width: #{$breakpoint-pc-narrow}px) and (min-width: #{$breakpoint-sp + 1}px) {
+            border-top: pxtorem(2, 'pc') solid $white1;
+        }
+    }
+
+}
+
+/*  c-block-pattern
+--------------------------------------------- */
+.c-block-pattern {
+    $host: &;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: pxtorem(64, 'pc');
+    padding-left: pxtorem(52, 'pc');
+    padding-bottom: pxtorem(112, 'pc');
+    background-color: #1A2E4B;
+
+     @media screen and (max-width: #{$breakpoint-sp}px) {
+        display: block;
+        padding-top: pxtovw(48, 'sp');
+        padding-left: pxtovw(48, 'sp');
+        padding-right: pxtovw(48, 'sp');
+        padding-bottom: pxtovw(96, 'sp');
+     }
+
+    &--reverse {
+        display: flex;
+        flex-direction: row;
+        background-color: #1E76FB;
+        padding-bottom: pxtorem(109, 'pc');
+        padding-left: pxtorem(84, 'pc');
+        margin-top: pxtorem(32, 'pc');
+
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            display: block;
+            padding-left: pxtovw(48, 'sp');
+            padding-right: pxtovw(48, 'sp');
+            padding-bottom: pxtovw(96, 'sp');
+            margin-top: pxtovw(48, 'sp');
+        }
+    }
+
+    &__contents {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding-left: pxtorem(60, 'pc');
+        color: $white1;
+        font-size: pxtorem(16, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-left: pxtorem(0, 'pc');
+        }
+    }
+
+    &__figure {
+        position: relative;
+        z-index: 2;
+
+        &--first {
+            position: absolute;
+            right: 0;
+            width: pxtorem(926, 'pc');
+            margin-top: pxtorem(16, 'pc');
+            margin-right: pxtorem(-86, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                position: static;
+                right: 0;
+                width: auto;
+                margin-top: pxtovw(48, 'sp');
+                margin-right: pxtovw(-72, 'sp');
+                margin-bottom: pxtovw(80, 'sp');
+                margin-left: pxtovw(-72, 'sp');
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &--second {
+            flex-shrink: 0;
+            width: pxtorem(541, 'pc');
+
+             @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: 100%;
+                margin-bottom: pxtovw(48, 'sp');
+             }
+        }
+    }
+
+    &__figure-img {
+        width: 100%;
+    }
+
+    &__label {
+        line-height: 2.0;
+        margin-bottom: pxtorem(8, 'pc');
+    }
+
+    &__ttl {
+        font-weight: bold;
+        font-size: pxtorem(32, 'pc');
+
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtorem(24, 'sp');
+         }
+    }
+
+    &__txt {
+        line-height: 2.0;
+        // margin-bottom: pxtorem(10, 'pc');
+
+        &--fw {
+            margin-top: pxtorem(16, 'pc');
+            margin-bottom: pxtorem(24, 'pc');
+        }
+    }
+
+    &__cassette-head {
+        line-height: 2.0;
+        margin-top: pxtorem(16, 'pc');
+        margin-bottom: pxtorem(8, 'pc');
+    }
+
+    &__list-item {
+        position: relative;
+        line-height: 2.0;
+        padding-left: pxtorem(25,'pc');
+
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-left: pxtovw(50,'sp');
+        }
+
+        &:before {
+            top: 50%;
+            left: 0;
+            content: '';
+            position: absolute;
+            background-color: $white1;
+            width: pxtorem(8,'pc');
+            height: pxtorem(2,'pc');
+            transform: translateY(-50%);
+        }
+    }
+
+    &__btn-area {
+        line-height: 1.0;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: $black1;
+        width: pxtorem(352, 'pc');
+        height: pxtorem(48, 'pc');
+        background: #FFFFFF;
+        border-radius: 4px;
+        transition: background-color .3s, color .3s;
+
+        @at-root .ipad & {
+        padding-top: pxtorem(3, 'pc');
+        }
+
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+        &:hover {
+            color: $white1;
+            background-color: $black1;
+            }
+
+        }
+
+         @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+         }
+
+    }
+
+}
+

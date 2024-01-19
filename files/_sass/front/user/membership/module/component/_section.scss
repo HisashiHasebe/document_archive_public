@@ -1,0 +1,271 @@
+/* ---------------------------------------------
+*   c-section
+--------------------------------------------- */
+.c-section {
+
+    &--feature {
+        padding-top: pxtorem(80, 'pc');
+        padding-bottom: pxtorem(60, 'pc');
+        color: $white1;
+        background-color: $black1;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: pxtovw(192, 'sp');
+            padding-bottom: pxtovw(128, 'sp');
+        }
+    }
+
+    &--pattern {
+        padding-top: pxtorem(112, 'pc');
+        padding-bottom: pxtorem(48, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: pxtovw(192, 'sp');
+            padding-bottom: pxtovw(48, 'sp');
+        }
+    }
+
+    &--about {
+        padding-top: pxtorem(80, 'pc');
+        padding-bottom: pxtorem(80, 'pc');
+        color: $black1;
+        background: #F0F0F0;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: pxtorem(192, 'sp');
+            padding-bottom: pxtovw(96, 'sp');
+        }
+    }
+
+    &--price {
+        background-color: $black1;
+        padding-top: pxtorem(80, 'pc');
+        padding-right: pxtorem(160, 'pc');
+        padding-bottom: pxtorem(99, 'pc');
+        padding-left: pxtorem(160, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: pxtovw(150, 'sp');
+            padding-right: pxtovw(48, 'sp');
+            padding-bottom: pxtovw(160, 'sp');
+            padding-left: pxtovw(48, 'sp');
+        }
+    }
+
+    &__icon-ttl {
+        width: pxtorem(155, 'pc');
+        margin-right: auto;
+        margin-left: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        max-width: $design-width-pc * 1px;
+        margin: 0 auto;
+
+        &:before {
+            position: absolute;
+            z-index: 1;
+            width: pxtorem(480, 'pc');
+            height: pxtorem(480, 'pc');
+            background-image: url(/files/user/img/membership/icon_union.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: pxtorem(480, 'pc') pxtorem(480, 'pc');
+        }
+
+        &--feature {
+            position: relative;
+            z-index: 1;
+            padding-right: pxtorem(48, 'pc');
+            padding-left: pxtorem(48, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                padding-right: pxtovw(48, 'sp');
+                padding-left: pxtovw(48, 'sp');
+            }
+
+            &:before {
+                content: "";
+                z-index: -1;
+                top: pxtorem(16, 'pc');
+                left: 0;
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    top: 0;
+                }
+            }
+        }
+
+        &--pattern {
+            position: relative;
+            padding-right: pxtorem(48, 'pc');
+            padding-left: pxtorem(48, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                padding-right: pxtovw(48, 'sp');
+                padding-left: pxtovw(48, 'sp');
+            }
+
+            &:before {
+                content: "";
+                top: pxtorem(490, 'pc');
+                right: pxtorem(351, 'pc');
+                width: pxtorem(545, 'pc');
+                height: pxtorem(545, 'pc');
+                background-size: pxtorem(545, 'pc') pxtorem(545, 'pc');
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    top: pxtovw(1672, 'sp');
+                    right: 50%;
+                    width: pxtovw(960, 'sp');
+                    height: pxtovw(960, 'sp');
+                    background-size: pxtovw(960, 'sp') pxtovw(960, 'sp');
+                    transform: translateX(50%);
+                }
+            }
+        }
+
+        &--about {
+            position: relative;
+            z-index: 1;
+            background-position: 100% 5%;
+            background-repeat: no-repeat;
+            padding-right: pxtorem(48, 'pc');
+            padding-left: pxtorem(48, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                padding-right: pxtovw(48, 'sp');
+                padding-left: pxtovw(48, 'sp');
+            }
+
+            &:before {
+                content: "";
+                z-index: -1;
+                top: pxtorem(16, 'pc');
+                right: 0;
+                background-image: url(/files/user/img/membership/icon_union_gray.svg);
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    top: 0;
+                }
+            }
+        }
+
+    }
+
+    &__head {
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtorem(16, 'sp');
+        }
+
+        &:before {
+            position: absolute;
+            width: pxtorem(48, 'pc');
+            height: pxtorem(48, 'pc');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: pxtorem(48, 'pc') pxtorem(48, 'pc');
+        }
+
+        &--feature {
+            position: relative;
+            padding-right: pxtorem(110, 'pc');
+            padding-left: pxtorem(110, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                padding-right: 0;
+                padding-left: 0;
+                margin-bottom: pxtorem(16, 'sp');
+
+                .c-ttl-1 {
+                    padding-left: pxtovw(144, 'sp');
+                }
+            }
+
+            &:before {
+                content: "";
+                top: 0;
+                left: pxtorem(18, 'pc');
+                background-image: url(/files/user/img/membership/icon_frame1.svg);
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    left: 0;
+                }
+            }
+
+        }
+
+        &--pattern {
+            position: relative;
+            padding-right: pxtorem(110, 'pc');
+            padding-left: pxtorem(110, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                padding-right: 0;
+                padding-left: 0;
+
+                .c-ttl-1 {
+                    padding-left: pxtovw(144, 'sp');
+                    line-height: 1.8;
+                    font-size: pxtorem(54, 'sp');
+                }
+            }
+
+            &:before {
+                content: "";
+                top: 0;
+                left: pxtorem(18, 'pc');
+                background-image: url(/files/user/img/membership/icon_frame2.svg);
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+
+        &--feature {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            padding-right: pxtorem(110, 'pc');
+            padding-left: pxtorem(110, 'pc');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            display: block;
+            padding-right: pxtorem(0, 'sp');
+            padding-left: pxtorem(0, 'sp');
+        }
+
+        &--pattern {
+            display: block;
+        }
+
+        &--about {
+            display: block;
+            margin-top: pxtorem(18, 'pc');
+        }
+
+
+    }
+
+    &__features {
+        display: flex;
+        margin-top: pxtovw(30, 'pc');
+    }
+
+    &__icon-ttl {
+        text-align: center;
+    }
+
+}

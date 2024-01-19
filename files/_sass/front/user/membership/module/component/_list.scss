@@ -1,0 +1,64 @@
+/* ---------------------------------------------
+*   c-list-conversion
+--------------------------------------------- */
+.c-list-conversion {
+    $host: &;
+
+     @media screen and (max-width: #{$breakpoint-sp}px) {
+         margin-top: pxtovw(96, 'sp');
+     }
+
+    &__item {
+        width: pxtorem(460, 'pc');
+        height: pxtorem(80, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+        }
+
+        &:nth-of-type(n+2) {
+            margin-top: pxtorem(24, 'pc');
+        }
+    }
+
+    &--kv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: pxtorem(32, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            display: block;
+            padding-top: 0;
+            margin-top: pxtovw(32, 'sp');
+        }
+    }
+
+    &--kv &__item {
+        width: pxtorem(180, 'pc');
+        height: pxtorem(80, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+        }
+
+        &:nth-of-type(n+2) {
+            margin-top: 0;
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(48, 'sp');
+            }
+        }
+
+        &--contact {
+            height: pxtorem(56, 'pc');
+            margin-left: pxtorem(24, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                height: pxtovw(160, 'sp');
+                margin-left: 0;
+            }
+        }
+    }
+
+}

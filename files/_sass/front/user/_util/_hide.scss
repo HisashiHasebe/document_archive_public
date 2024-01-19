@@ -1,0 +1,13 @@
+/* ---------------------------------------------
+*   hide.scss
+--------------------------------------------- */
+@media screen and (min-width: #{($breakpoint-sp + 1)}px) {
+    .pc-hide {
+        display: none !important;
+    }
+}
+@media screen and (max-width: #{$breakpoint-sp}px) {
+    .sp-hide {
+        display: none !important;
+    }
+}

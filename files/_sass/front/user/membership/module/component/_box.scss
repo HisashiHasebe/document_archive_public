@@ -1,0 +1,98 @@
+/* ---------------------------------------------
+*   c-box-feature
+--------------------------------------------- */
+.c-box-feature {
+    $host: &;
+    width: pxtorem(352, 'pc');
+    height: pxtorem(352, 'pc');
+    padding: pxtorem(60, 'pc') pxtorem(24, 'pc') pxtorem(24, 'pc');
+    border-radius: 8px;
+    background: #27282C;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: 100%;
+        padding-top: pxtovw(100, 'sp');
+
+        &:nth-child(n+2) {
+            margin-top: pxtovw(48, 'sp');
+        }
+    }
+
+    @media screen and (max-width: #{$breakpoint-pc-narrow}px) and (min-width: #{$breakpoint-sp + 1}px) {
+        padding: pxtorem(40, 'pc');
+    }
+
+    &__img {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+
+        &--sp1 {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(96, 'sp');
+            }
+        }
+
+        &--sp2 {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(144, 'sp');
+            }
+        }
+
+        &--1 {
+            width: pxtorem(48, 'pc');
+            margin-top: pxtorem(15, 'pc');
+            margin-bottom: pxtorem(31, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(96, 'sp');
+                margin-bottom: pxtovw(50, 'sp');
+            }
+        }
+
+        &--2 {
+            width: pxtorem(72, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(144, 'sp');
+            }
+        }
+
+        &--3 {
+            width: pxtorem(72, 'pc');
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(144, 'sp');
+            }
+        }
+    }
+
+    &__ttl {
+        line-height: 1.7;
+        font-weight: bold;
+        text-align: center;
+        font-size: pxtorem(24, 'pc');
+        margin-top: pxtorem(16,'pc');
+        margin-bottom: pxtorem(16,'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(32, 'sp');
+        }
+    }
+
+    &__txt {
+        line-height: 2.0;
+        font-size: pxtorem(16, 'pc');
+        margin: pxtorem(15, 'pc') 0;
+    }
+
+    &__link {
+        color: #986EF0;
+
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            &:hover {
+                @include hover-opacity();
+            }
+        }
+    }
+}

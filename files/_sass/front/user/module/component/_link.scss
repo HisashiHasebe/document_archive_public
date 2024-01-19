@@ -1,0 +1,123 @@
+/* ---------------------------------------------
+*   c-link
+--------------------------------------------- */
+.c-link {
+    text-decoration: underline;
+    color: $theme2;
+
+    @at-root .is-developers & {
+        color: $theme2;
+    }
+
+    @at-root .is-marketers & {
+        color: $theme3;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* ---------------------------------------------
+*   c-link-set
+--------------------------------------------- */
+.c-link-set {
+    display: flex;
+    align-items: center;
+
+    &__ttl {
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-right: pxtovw(35, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-right: pxtovw(20, 'sp');
+        }
+    }
+
+    &__ttl-ico {
+        width: 40px;
+        margin-right: 34px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(40, 'tb');
+            margin-right: pxtovw(34, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(30, 'sp');
+            margin-right: pxtovw(15, 'sp');
+        }
+    }
+
+    &__ttl-txt {
+        color: $white1;
+        font-size: pxtorem(20, 'pc');
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: .02em;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            color: $theme1;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+    }
+
+    &__desc-ico {
+        width: 20px;
+        line-height: 1;
+        margin-right: 28px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(20, 'tb');
+            margin-right: pxtovw(28, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(20, 'sp');
+            margin-right: pxtovw(20, 'sp');
+        }
+    }
+
+    &__desc-btn {
+        width: 235px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(235, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(280, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-link-docs
+--------------------------------------------- */
+.c-link-docs {
+        color: $theme4;
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &--purple {
+        color: $theme3;
+    }
+}

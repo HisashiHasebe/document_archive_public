@@ -1,0 +1,24 @@
+/* ---------------------------------------------
+*   c-ttl
+--------------------------------------------- */
+.c-ttl {
+	font-size: pxtorem(48, 'pc');
+	font-weight: 600;
+	line-height: 1.2;
+
+	&--white {
+		color: $white1;
+	}
+
+	&--docs {
+		margin-bottom: 68px;
+		font-size: pxtorem(48, 'pc');
+		font-weight: 600;
+		line-height: 1.2;
+
+		@at-root .is-dark & {
+			color: $white1;
+		}
+
+	}
+}

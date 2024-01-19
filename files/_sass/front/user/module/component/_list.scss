@@ -1,0 +1,492 @@
+/* ---------------------------------------------
+*   c-list-milestones
+--------------------------------------------- */
+.c-list-milestones {
+    position: relative;
+    width: 847px;
+    padding: 25px 0 110px;
+    margin: 0 auto;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(847, 'tb');
+        padding: pxtovw(25, 'tb') 0 pxtovw(110, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: pxtovw(580, 'sp');
+        padding: pxtovw(25, 'sp') 0 pxtovw(0, 'sp');
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 33px;
+        left: 0;
+        right: 0;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: $theme4;
+        opacity: .4;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            top: pxtovw(33, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            top: pxtovw(80, 'sp');
+            left: pxtovw(8, 'sp');
+            width: pxtovw(1, 'sp');
+            height: pxtovw(465, 'sp');
+            z-index: 1;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: $white1;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-right: pxtovw(5, 'tb');
+            padding-left: pxtovw(5, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: pxtovw(50, 'sp') 0;
+            background-color: initial;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $theme4;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(16, 'tb');
+                height: pxtovw(16, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(16, 'sp');
+                height: pxtovw(16, 'sp');
+            }
+        }
+    }
+
+    &__year {
+        position: absolute;
+        bottom: calc(100% + 16px);
+        left: 50%;
+        color: $theme5;
+        font-family: $ff-inter;
+        font-size: pxtorem(14, 'pc');
+        font-weight: 700;
+        letter-spacing: .1em;
+        line-height: 1.3;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            bottom: calc(100% + (16/1440)*100vw);
+            font-size: pxtovw(14, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            bottom: calc((50/750)*100vw);
+            left: 10%;
+            font-size: pxtovw(14, 'sp');
+        }
+    }
+
+    &__txt {
+        position: absolute;
+        top: calc(100% + 25px);
+        left: 50%;
+        width: 240px;
+        text-align: center;
+        font-size: pxtorem(20, 'pc');
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: .02em;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            top: calc(100% + (25/1440)*100vw);
+            width: pxtovw(240, 'tb');
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            top: 50%;
+            width: pxtovw(240, 'sp');
+            font-size: pxtovw(20, 'sp');
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-list-check
+--------------------------------------------- */
+.c-list-check {
+
+    &__item {
+        padding-left: 50px;
+        color: $theme1;
+        font-family: $ff-inter;
+        font-size: pxtorem(23, 'pc');
+        letter-spacing: .01em;
+        background: url(/files/user/img/common/ico/ico_check_dev.svg) 2px .4em no-repeat;
+        background-size: 16px auto;
+        margin-top: 14px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(23, 'tb');
+            padding-left: pxtovw(40, 'tb');
+            margin-top: pxtovw(14, 'tb');
+            background-size: pxtovw(16, 'tb') auto;
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(28, 'sp');
+            padding-left: pxtovw(30, 'sp');
+            margin-top: pxtovw(15, 'sp');
+            background-size: pxtovw(16, 'sp');
+        }
+
+        @at-root .is-developers & {
+            color: $white1;
+            background-image: url(/files/user/img/common/ico/ico_check_dev.svg);
+        }
+
+        @at-root .is-marketers & {
+            color: $theme1;
+            background-image: url(/files/user/img/common/ico/ico_check_mkt.svg);
+        }
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-list-fig
+--------------------------------------------- */
+.c-list-fig {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 340px;
+        margin-right: 100px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(340, 'tb');
+            margin-right: pxtovw(100, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(375, 'sp');
+            margin-right: 0;
+            margin-top: pxtovw(50, 'sp');
+        }
+
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+
+        &:nth-of-type(n + 4) {
+            margin-top: 83px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-top: pxtovw(83, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(50, 'sp');
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__img {
+        width: 64px;
+        margin: 0 auto 40px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(64, 'tb');
+            margin-bottom: pxtovw(40, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(64, 'sp');
+            margin-bottom: pxtovw(40, 'sp');
+        }
+    }
+
+    &__cap {
+        text-align: center;
+        font-size: pxtorem(26, 'pc');
+        font-weight: 600;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(26, 'sp');
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        color: $theme5;
+        font-family: $ff-karla;
+        font-size: pxtorem(18, 'pc');
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 17px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(18, 'tb');
+            margin-top: pxtovw(17, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp');
+            margin-top: pxtovw(17, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-list-logo
+--------------------------------------------- */
+.c-list-logo {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        width: 96px;
+        margin-left: 120px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(96, 'tb');
+            margin-left: pxtovw(120, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(96, 'sp');
+            margin-left: pxtovw(120, 'sp');
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    &__img {
+        margin-bottom: 25px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(25, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(25, 'sp');
+        }
+    }
+
+    &__cap {
+        text-align: center;
+        color: $theme5;
+        font-family: $ff-karla;
+        font-size: pxtorem(18, 'pc');
+        font-weight: 400;
+        line-height: 1.4;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(18, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-list-plan
+--------------------------------------------- */
+.c-list-plan {
+    padding-left: 45px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-left: pxtovw(45, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-left: pxtovw(15, 'sp');
+    }
+
+    &__item {
+        font-family: $ff-karla;
+        padding-left: 34px;
+        font-size: pxtorem(16, 'pc');
+        background: url(/files/user/img/common/ico/ico_check_dev_s.svg) 0 center no-repeat;
+        background-size: 14px auto;
+        margin-top: 16px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-left: pxtovw(34, 'tb');
+            font-size: pxtovw(18, 'tb');
+            background-size: pxtovw(14, 'tb') auto;
+            margin-top: pxtovw(16, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-left: pxtovw(20, 'sp');
+            font-size: pxtovw(18, 'sp');
+            background-size: pxtovw(14, 'sp') auto;
+            margin-top: pxtovw(16, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            background-image: url(/files/user/img/common/ico/ico_check_mkt_s.svg);
+        }
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-list-checkbox
+--------------------------------------------- */
+.c-list-checkbox {
+    $host: &;
+
+    &__item {
+        margin-top: 5px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(5, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(5, 'sp');
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+    }
+
+    &__input {
+        display: block;
+        width: 0;
+        opacity: 0;
+
+        & + #{$host}__txt {
+            position: relative;
+            display: inline-block;
+            padding-left: 24px;
+            line-height: 1;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                padding-left: pxtovw(24, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                padding-left: pxtovw(24, 'sp');
+            }
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                box-sizing: border-box;
+                display: inline-block;
+            }
+
+            &:before {
+                top: 0;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                border: 2px solid $theme2;
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    width: pxtovw(16, 'tb');
+                    height: pxtovw(16, 'tb');
+                    border: pxtovw(2, 'tb') solid $theme2;
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    width: pxtovw(20, 'sp');
+                    height: pxtovw(20, 'sp');
+                    border: pxtovw(2, 'sp') solid $theme2;
+                }
+            }
+
+            &:after {
+                top: 2px;
+                left: 6px;
+                width: 5px;
+                height: 10px;
+                border-right: 2px solid $white1;
+                border-bottom: 2px solid $white1;
+                transform: rotateZ(45deg);
+                opacity: 0;
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    top: pxtovw(2, 'tb');
+                    left: pxtovw(6, 'tb');
+                    width: pxtovw(5, 'tb');
+                    height: pxtovw(10, 'tb');
+                    border-right: pxtovw(2, 'tb') solid $white1;
+                    border-bottom: pxtovw(2, 'tb') solid $white1;
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    top: pxtovw(2, 'sp');
+                    left: pxtovw(6, 'sp');
+                    width: pxtovw(6, 'sp');
+                    height: pxtovw(12, 'sp');
+                    border-right: pxtovw(2, 'sp') solid $white1;
+                    border-bottom: pxtovw(2, 'sp') solid $white1;
+                }
+            }
+        }
+
+        &:checked + #{$host}__txt {
+
+            &:before {
+                background-color: $theme2;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}

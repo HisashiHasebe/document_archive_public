@@ -1,0 +1,197 @@
+@charset "UTF-8";
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@import "config";
+@import "partial/_clearfix";
+@import "partial/_font-feature-settings";
+@import "partial/_fonts";
+@import "partial/_hover-opacity";
+@import "partial/_hover-underline";
+@import "partial/_leahy-langridge";
+@import "partial/_object-fit";
+@import "partial/_place-holder";
+@import "partial/_pxtorem";
+@import "partial/_pxtovw";
+@import "partial/_text-ellipsis";
+@import "partial/_text-line-clamp";
+@import "partial/_valign-fix-ie";
+
+/* ==========================================================
+Name:
+    reset
+
+Description:
+    ユーザーエージェントスタイルの初期化を行う
+
+Contents:
+    base reset style
+    form parts reset style
+========================================================== */
+/* ---------------------------------------------
+*   base reset style
+--------------------------------------------- */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video,hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol,ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption,th,td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q,blockquote {
+    quotes: none;
+}
+q:before,q:after,blockquote:before,blockquote:after {
+    content: "";
+    content: none;
+    clear: both;
+}
+a img {
+    border: none;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display: block;
+}
+
+/* ---------------------------------------------
+*   form parts reset style
+--------------------------------------------- */
+input,button,textarea,select {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  appearance: none;
+  font-family: $root-ff;
+}
+button {
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+textarea {
+  display: block;
+  overflow: auto;
+  resize: none;
+}
+
+/* ==========================================================
+Name:
+    plugin
+
+Description:
+    サイトで使用するjQuery等のプラグインのCSSを記述する
+    このCSSファイルにプラグインに付属するCSSを移設する
+    このファイルに記述されたスタイルは変更しない
+    スタイルの変更が必要な場合、他のCSSファイルにて上書きを行う
+========================================================== */
+@import "plugin/_cocoen.min";
+@import "plugin/_magnific-popup";
+@import "plugin/_slick";
+@import "plugin/_solarized-dark";
+@import "plugin/_solarized-light";
+
+/* ==========================================================
+Name:
+    base
+
+Description:
+    サイト全体に共通する設定を記述する
+    基本的にタグ自体にスタイルを定義する
+
+Contents:
+    base settings
+========================================================== */
+/* ==========================================================
+*
+*   base settings
+*
+========================================================== */
+@import "base/_base";
+
+/* ==========================================================
+Name:
+    module.css
+
+Description:
+    サイトで共通使用する汎用モジュールのスタイルを記述する
+    アルファベット降順(A->Z)に記述する
+
+Contents:
+    layout
+    component
+    utility
+========================================================== */
+/* ==========================================================
+*
+*   layout
+*
+========================================================== */
+@import "module/layout/_column";
+@import "module/layout/_contents";
+@import "module/layout/_footer";
+@import "module/layout/_header";
+@import "module/layout/_kv";
+@import "module/layout/_main";
+@import "module/layout/_sidebar";
+@import "module/layout/_wrapper";
+
+/* ==========================================================
+*
+*   component
+*
+========================================================== */
+@import "module/component/_block";
+@import "module/component/_box";
+@import "module/component/_btn";
+@import "module/component/_card";
+@import "module/component/_chapter";
+@import "module/component/_link";
+@import "module/component/_list";
+@import "module/component/_section";
+@import "module/component/_ttl";
+@import "module/component/_txt";
+@import "module/component/_wysiwyg";
+
+/* ==========================================================
+*
+*   utility
+*
+========================================================== */
+@import "module/_other";
+@import "_util/_margin";
+@import "_util/_hide";

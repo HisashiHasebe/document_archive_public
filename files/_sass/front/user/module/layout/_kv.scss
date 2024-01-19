@@ -1,0 +1,883 @@
+/* ---------------------------------------------
+*   kv
+--------------------------------------------- */
+.kv {
+    padding-top: (195 + 126) * 1px;
+    padding-bottom: 160px;
+    background-color: $theme6;
+    overflow: hidden;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(321, 'tb');
+        padding-bottom: pxtovw(160, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(186, 'sp');
+        padding-bottom: pxtovw(98, 'sp');
+    }
+
+    &__container {
+        width: 1010px;
+        padding-left: 30px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(1010, 'tb');
+            padding-left: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(590, 'sp');
+            padding-left: 0;
+        }
+    }
+
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            position: relative;
+        }
+    }
+}
+
+/*  kv-catch
+--------------------------------------------- */
+.kv-catch {
+    font-size: pxtorem(14, 'pc');
+    line-height: 1.21;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        font-size: pxtovw(14, 'tb');
+        margin-bottom: pxtovw(20, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtovw(20, 'sp');
+        margin-bottom: pxtovw(30, 'sp');
+    }
+
+    &__txt {
+        font-family: $ff-inter;
+    }
+
+    &__ico {
+        display: inline-block;
+        width: 16px;
+        margin-left: 6px;
+        transform: translateY(-0.1em);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(16, 'tb');
+            margin-left: pxtovw(6, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(24, 'sp');
+            margin-left: pxtovw(10, 'sp');
+        }
+    }
+}
+
+/*  kv-ttl
+--------------------------------------------- */
+.kv-ttl {
+    position: relative;
+    font-size: pxtorem(72, 'pc');
+    font-weight: 600;
+    line-height: 1.12;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        font-size: pxtovw(72, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtovw(86, 'sp');
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -24px;
+        left: -36px;
+        width: 86px;
+        height: 86px;
+        background: url(/files/user/img/common/obj/obj_gry_1.svg) 0 0 no-repeat;
+        background-size: 100%;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            bottom: pxtovw(-24, 'tb');
+            left: pxtovw(-36, 'tb');
+            width: pxtovw(86, 'tb');
+            height: pxtovw(86, 'tb');
+        }
+    }
+}
+
+/*  kv-img
+--------------------------------------------- */
+.kv-img {
+    width: 281px;
+    padding-top: 34px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(281, 'tb');
+        padding-top: pxtovw(34, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        position: absolute;
+        top: 2.5%;
+        right: 14%;
+        width: pxtovw(250, 'sp');
+    }
+}
+
+/* ---------------------------------------------
+*   kv-cstm
+--------------------------------------------- */
+.kv-cstm {
+    padding-top: 180px;
+    padding-bottom: 86px;
+    background-color: $theme1;
+    overflow: hidden;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(110, 'tb');
+        padding-bottom: pxtovw(86, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(110, 'sp');
+        padding-bottom: pxtovw(86, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        padding-bottom: 77px;
+        background-color: $theme6;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-bottom: pxtovw(77, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-bottom: pxtovw(77, 'sp');
+        }
+    }
+
+    @at-root .front & {
+        background-color: $white1;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-top: pxtovw(180, 'tb');
+            padding-bottom: pxtovw(86, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: 110px;
+            padding-bottom: 0;
+        }
+    }
+
+
+    &__container {
+        max-width: 1550px;
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-right: pxtovw(30, 'tb');
+            padding-left: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: 0 pxtovw(55, 'sp') 0 pxtovw(70, 'sp');
+        }
+    }
+
+    &__toggle {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: 94px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(94, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(60, 'sp');
+        }
+    }
+
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            flex-direction: column-reverse;
+        }
+
+        @at-root .front & {
+            justify-content: center;
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/*  kv-cstm-block
+--------------------------------------------- */
+.kv-cstm-block {
+    width: percentage(630/1440);
+    padding-left: 25px;
+    margin-right: 20px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-left: pxtovw(25, 'tb');
+        margin-right: pxtovw(20, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: 100%;
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    @at-root .front & {
+        width: 520px;
+        padding-left: 0;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(520, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+        }
+    }
+}
+
+/*  kv-cstm-catch
+--------------------------------------------- */
+.kv-cstm-catch {
+    font-size: pxtorem(14, 'pc');
+    line-height: 1.21;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        font-size: pxtovw(18, 'tb');
+        margin-bottom: pxtovw(20, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtovw(20, 'sp');
+        margin-bottom: pxtovw(20, 'sp');
+    }
+
+
+    @at-root .front & {
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(14, 'tb');
+            margin-bottom: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(14, 'sp');
+            margin-bottom: pxtovw(28, 'sp');
+        }
+    }
+
+    &__txt {
+        font-family: $ff-inter;
+        color: $white1;
+
+        @at-root .is-marketers & {
+            color: $theme1;
+        }
+
+        @at-root .front & {
+            color: $black1;
+        }
+    }
+
+    &__ico {
+        display: inline-block;
+        width: 16px;
+        margin-left: 6px;
+        transform: translateY(-0.1em);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(16, 'tb');
+            margin-left: pxtovw(6, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(18, 'sp');
+            margin-left: pxtovw(6, 'sp');
+        }
+
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+
+        @at-root .front & {
+            width: 124px;
+            margin-left: 0;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(124, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(130, 'sp');
+            }
+        }
+    }
+}
+
+/*  kv-cstm-ttl
+--------------------------------------------- */
+.kv-cstm-ttl {
+    color: $white1;
+    font-size: pxtorem(72, 'pc');
+    font-weight: 600;
+    line-height: 1.12;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        font-size: pxtovw(72, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtovw(90, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        color: $theme1;
+    }
+
+    @at-root .front &  {
+        color: $black1;
+    }
+}
+
+/*  kv-cstm-txt
+--------------------------------------------- */
+.kv-cstm-txt {
+    color: $white1;
+    font-size: pxtorem(20, 'pc');
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin-top: 46px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        font-size: pxtovw(20, 'tb');
+        margin-top: pxtovw(46, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        margin-top: pxtovw(35, 'sp');
+        font-size: pxtovw(40, 'sp');
+        line-height: 1.3;
+    }
+
+    @at-root .is-marketers & {
+        color: $theme5;
+    }
+
+    @at-root .front & {
+        margin-top: 30px;
+        color: $black1;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(30, 'tb');
+            font-size: pxtovw(16, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            position: relative;
+            padding: 0 pxtovw(10, 'sp');
+            margin-top: pxtovw(35, 'sp');
+            font-size: pxtovw(26, 'sp');
+            line-height: 1.5;
+            z-index: 1;
+            letter-spacing: -0.05em;
+        }
+    }
+
+    &--bg {
+        display: inline-block;
+        padding: 0 3px;
+        color: $white1 !important;
+        font-weight: bold;
+        font-size: 30px !important;
+        line-height: 1.33 !important;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding: 0 pxtovw(3, 'tb');
+            font-size: pxtovw(30, 'tb') !important;
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: 0 pxtovw(10, 'sp');
+            margin-top: pxtovw(35, 'sp');
+            font-size: pxtovw(40, 'sp') !important;
+            line-height: 1.3 !important;
+        }
+
+        span {
+            background: linear-gradient(transparent 0%, #000 0%);
+        }
+    }
+
+    &--caution {
+        font-weight: 400;
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(16, 'tb') !important;
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp') !important;
+        }
+
+        @at-root .front & {
+            margin-top: 40px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-top: pxtovw(40, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(35, 'sp');
+            }
+        }
+    }
+}
+
+/*  kv-cstm-btns
+--------------------------------------------- */
+.kv-cstm-btns {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        margin-top: pxtovw(47, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        justify-content: space-between;
+        margin-top: pxtovw(70, 'sp');
+    }
+
+    @at-root .front & {
+        position: relative;
+        z-index: 1;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            z-index: initial;
+        }
+    }
+
+    &__item {
+        width: 163px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(163, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(200, 'sp');
+        }
+
+        &--wide {
+            width: 200px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(200, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(280, 'sp');
+            }
+        }
+    }
+
+    &__sep {
+        color: $white1;
+        margin: 0 16px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin: 0 pxtovw(16, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin: 0 pxtovw(16, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            color: $theme1;
+        }
+
+        @at-root .front & {
+            color: $theme3;
+            font-size: 14px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                font-size: pxtovw(14, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                font-size: pxtovw(24, 'sp');
+            }
+        }
+    }
+}
+
+/*  kv-cstm-img
+--------------------------------------------- */
+.kv-cstm-img {
+    position: relative;
+    width: 620px;
+    height: 510px;
+    padding-top: 40px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(620, 'tb');
+        height: pxtovw(510, 'tb');
+        padding-top: pxtovw(40, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: pxtovw(620, 'sp');
+        height: pxtovw(510, 'sp');
+        padding-top: pxtovw(40, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        width: 628px;
+        height: 496px;
+        transform: translate(-55px, 46px);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(628, 'tb');
+            height: pxtovw(496, 'tb');
+            transform: translate(pxtovw(-55, 'tb'), pxtovw(46, 'tb'));
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(590, 'sp');
+            height: pxtovw(465, 'sp');
+            transform: translate(0);
+        }
+    }
+
+    @at-root .front & {
+        width: 612px;
+        height: 560px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(612, 'tb');
+            height: pxtovw(560, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+            height: pxtovw(422, 'sp');
+            margin-top: pxtovw(70, 'sp');
+        }
+    }
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 53%;
+        left: 50.8%;
+        display: block;
+        width: 920px;
+        height: 920px;
+        background: url(/files/user/img/developers/bg_pattern.svg) 0 0 no-repeat;
+        background-size: 100%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(920, 'tb');
+            height: pxtovw(920, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(920, 'sp');
+            height: pxtovw(920, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            display: none;
+        }
+
+        @at-root .front & {
+            top: 45%;
+            width: 612px;
+            height: 605px;
+            background: url(/files/user/img/front/img_kv_front.png) 0 0 no-repeat;
+            background-size: 100% auto;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(612, 'tb');
+                height: pxtovw(605, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                top: 0;
+                left: 3%;
+                width: pxtovw(580, 'sp');
+                height: pxtovw(422, 'sp');
+                background-image: url(/files/user/img/front/sp/img_kv_front.png);
+                transform: translate(0);
+            }
+        }
+    }
+
+    &:after {
+        @at-root .front & {
+            content: "";
+            position: absolute;
+            bottom: 8.4%;
+            left: -89.5%;
+            display: block;
+            width: 86px;
+            height: 86px;
+            background: url(/files/user/img/common/obj/obj_blk_2.svg) 0 0 no-repeat;
+            background-size: 100%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(86, 'tb');
+                height: pxtovw(86, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(86, 'sp');
+                height: pxtovw(86, 'sp');
+                bottom: 205%;
+                left: -1%;
+                z-index: 0;
+            }
+        }
+    }
+
+    &__inner {
+        position: relative;
+        height: 100%;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: $theme1;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding: pxtovw(50, 'tb');
+            border-radius: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: pxtovw(50, 'sp');
+            border-radius: pxtovw(20, 'sp');
+        }
+    }
+
+    &__slide {
+        position: relative;
+        height: 100%;
+
+        > div {
+            height: 100%;
+        }
+
+        img {
+            max-width: initial;
+            max-width: none;
+            max-width: auto;
+            width: auto !important;
+            background-color: $theme1;
+            height: 100%;
+        }
+
+        > img {
+            margin-left: auto;
+        }
+    }
+
+    .cocoen-drag:before {
+        width: 29px;
+        height: 30px;
+        border: none;
+        background: url(/files/user/img/developers/ico_slide.svg) 0 0 no-repeat;
+        background-size: 100%;
+        margin-top: -15px;
+        margin-left: -14.5px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(30, 'tb');
+            height: pxtovw(30, 'tb');
+            margin-top: pxtovw(-15, 'tb');
+            margin-left: pxtovw(-15, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(30, 'sp');
+            height: pxtovw(30, 'sp');
+            margin-top: pxtovw(-15, 'sp');
+            margin-left: pxtovw(-15, 'sp');
+        }
+    }
+}
+
+/*  kv-cstm-scroll
+--------------------------------------------- */
+.kv-cstm-scroll {
+    margin-top: 146px;
+    text-align: center;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        margin-top: pxtovw(146, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        display: none;
+    }
+
+    @at-root .is-marketers & {
+        margin-top: 113px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(113, 'tb');
+        }
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(113, 'sp');
+        }
+    }
+
+    @at-root .front & {
+        margin-top: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 26px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(26, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(26, 'sp');
+        }
+    }
+
+    &__ico {
+        display: inline-block;
+        position: relative;
+        width: 22px;
+        height: 36px;
+        border: 1px solid $theme5;
+        border-radius: 16px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(22, 'tb');
+            height: pxtovw(36, 'tb');
+            border-radius: pxtovw(16, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(22, 'sp');
+            height: pxtovw(36, 'sp');
+            border-radius: pxtovw(16, 'sp');
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            box-shadow: 0 0 4px $theme2;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $theme2;
+            transform: translate(-50%, 0);
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(7, 'tb');
+                box-shadow: 0 0 pxtovw(4, 'tb') $theme2;
+                width: pxtovw(6, 'tb');
+                height: pxtovw(6, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                top: pxtovw(7, 'sp');
+                box-shadow: 0 0 pxtovw(4, 'sp') $theme2;
+                width: pxtovw(6, 'sp');
+                height: pxtovw(6, 'sp');
+            }
+
+            @at-root .is-marketers & {
+                background-color: $theme3;
+                box-shadow: 0 0 4px $theme3;
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    box-shadow: 0 0 pxtovw(4, 'tb') $theme3;
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    box-shadow: 0 0 pxtovw(4, 'sp') $theme3;
+                }
+            }
+
+            @at-root .front & {
+                box-shadow: 0 0 4px $theme3;
+                background-color: $theme3;
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    box-shadow: 0 0 pxtovw(4, 'tb') $theme3;
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    box-shadow: 0 0 pxtovw(4, 'sp') $theme3;
+                }
+            }
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        white-space: nowrap;
+        color: $theme5;
+        font-family: $ff-inter;
+        font-size: pxtorem(10, 'pc');
+        font-weight: 400;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(10, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(10, 'sp');
+        }
+    }
+}

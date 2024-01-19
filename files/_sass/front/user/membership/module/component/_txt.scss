@@ -1,0 +1,71 @@
+/* ---------------------------------------------
+*   c-txt
+--------------------------------------------- */
+.c-txt {
+    margin-top: pxtorem(24, 'sp');
+    margin-bottom: pxtorem(32, 'sp');
+    font-size: pxtorem(40,'pc');
+    font-weight: bold;
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem(30, 'sp');
+    }
+
+    &__strong {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    &__italic {
+        font-style: italic;
+    }
+}
+
+/*  .c-txt-lead
+--------------------------------------------- */
+
+.c-txt-lead {
+    line-height: 2.0;
+    width: pxtorem(736, 'pc');
+    margin-top: pxtorem(8, 'pc');
+    font-size: pxtorem(16, 'pc');
+    padding-bottom: pxtorem(40, 'pc');
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+         width: 100%;
+         padding-bottom: pxtorem(24, 'sp');
+    }
+}
+
+/*  c-txt-normal
+--------------------------------------------- */
+.c-txt-normal {
+    line-height: 2.0;
+    font-size: pxtorem(16, 'pc');
+    width: pxtorem(736, 'pc');
+    margin: 0 auto;
+    padding-top: pxtorem(30, 'pc');
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: 100%;
+
+    }
+
+    &--no-pdt-sp {
+        padding-top: 0;
+    }
+
+    &--top {
+        margin-top: pxtorem(10, 'pc');
+    }
+
+    &__link {
+        color: $theme1;
+
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            &:hover {
+                @include hover-opacity();
+            }
+        }
+    }
+
+}

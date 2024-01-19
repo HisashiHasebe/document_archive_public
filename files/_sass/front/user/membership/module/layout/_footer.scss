@@ -1,0 +1,195 @@
+/* ---------------------------------------------
+*   footer
+--------------------------------------------- */
+.footer {
+    $host: &;
+    color: $white1;
+    background-color: $black1;
+}
+
+/*  footer-pagetop
+--------------------------------------------- */
+.footer-pagetop {
+    $host: &;
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+
+    &__link-txt {
+    }
+}
+
+/*  footer-container
+--------------------------------------------- */
+.footer-container {
+    $host: &;
+    display: flex;
+    justify-content: space-between;
+    max-width: $design-width-pc * 1px;
+    padding-top: pxtorem(120,'pc');
+    padding-right: pxtorem(160,'pc');
+    padding-bottom: pxtorem(120,'pc');
+    padding-left: pxtorem(64,'pc');
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-width: #{$breakpoint-sp + 1}px) {
+        display: block;
+        padding-top: pxtovw(96, 'sp');
+        padding-right: 0;
+        padding-bottom: pxtovw(160, 'sp');
+        padding-left: pxtovw(48,'sp');
+    }
+}
+
+/*  footer-nav
+--------------------------------------------- */
+.footer-nav {
+    $host: &;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        margin-top: pxtorem(96, 'sp');
+        margin-bottom: pxtorem(96, 'sp');
+    }
+
+    &:first-child {
+        margin-right: pxtorem(30, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-right: 0;
+        }
+    }
+
+    &:nth-child(2) {
+        width: pxtorem(170, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: auto;
+        }
+    }
+
+    &__list {
+        letter-spacing: -0.8px;
+        line-height: 2.0;
+        font-size: pxtorem(12,'pc');
+        margin-top: pxtorem(12,'pc');
+        margin-right: pxtorem(12,'pc');
+        margin-bottom: pxtorem(12,'pc');
+    }
+
+    &__list-item {
+        margin-bottom: pxtorem(16,'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtorem(32, 'sp');
+            margin-bottom: pxtorem(32, 'sp');
+        }
+    }
+
+    &__link {
+        white-space: nowrap;
+
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+}
+
+/*  footer-logo
+--------------------------------------------- */
+.footer-logo {
+    $host: &;
+    width:  pxtorem(155,'pc');
+    height: pxtorem(56,'pc');
+    margin-bottom: pxtorem(64,'pc');
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        margin-bottom: pxtovw(96,'sp');
+    }
+
+    &__link {
+        @include leahy-langridge();
+        display: block;
+        padding-top: pxtorem(56, 'pc');
+        background: url(/files/user/img/membership/icon_black_kuroco.png) 0 0 no-repeat;
+        background-size: auto 100%;
+
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+}
+
+/*  footer-details
+--------------------------------------------- */
+.footer-details {
+    $host: &;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.0;
+    width: pxtorem(540, 'pc');
+    height: pxtorem(160,'pc');
+    font-weight: bold;
+    font-size: pxtorem(12,'pc');
+
+    @media screen and (max-width: #{$breakpoint-sp + 1}px) {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}
+
+/*  footer-detail
+--------------------------------------------- */
+.footer-detail {
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+/*  footer-copyright
+--------------------------------------------- */
+.footer-copyright {
+    $host: &;
+
+    &__txt {
+        letter-spacing: -0.5px;
+        font-size: pxtorem(12,'pc');
+        margin-top: pxtorem(20,'pc');
+        margin-bottom: pxtorem(20,'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            letter-spacing: pxtovw(-1, 'sp');
+            font-size: pxtovw(24,'sp');
+            margin: 0;
+        }
+
+        &--gray {
+            color: #CCCCCC;
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                font-size: pxtovw(24,'sp');
+                margin-top: pxtovw(50, 'sp');
+            }
+        }
+    }
+}
+
+/*  footer-map
+--------------------------------------------- */
+.footer-map {
+    line-height: 2.0;
+    font-size: pxtorem(16,'pc');
+    margin-bottom: pxtorem(24,'pc');
+
+     @media screen and (max-width: #{$breakpoint-sp + 1}px) {
+        margin-bottom: pxtovw(48,'sp');
+     }
+}
+
+/*  footer-copyright__txt
+--------------------------------------------- */
+
+

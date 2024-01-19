@@ -1,0 +1,11 @@
+/* ---------------------------------------------
+*   column
+--------------------------------------------- */
+.column {
+	position: relative;
+	padding-left: 140px;
+
+	@at-root .is-dark & {
+			background-color: $theme1;
+		}
+}

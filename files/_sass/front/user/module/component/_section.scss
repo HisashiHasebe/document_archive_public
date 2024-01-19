@@ -1,0 +1,1821 @@
+/* ---------------------------------------------
+*   c-section
+--------------------------------------------- */
+.c-section {
+    width: 1440px;
+    margin: 190px auto 0;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(1440, 'tb');
+        margin-top: pxtovw(190, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: pxtovw(750, 'sp');
+        margin-top: pxtovw(185, 'sp');
+    }
+
+    &--task {
+        position: relative;
+
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: 32px;
+            left: 120px;
+            width: 1205px;
+            height: 450px;
+            background: url(/files/user/img/front/bg_task.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(32, 'tb');
+                left: pxtovw(120, 'tb');
+                width: pxtovw(1205, 'tb');
+                height: pxtovw(450, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                display: none;
+            }
+        }
+    }
+
+    &--problem {
+        position: relative;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(160, 'sp');
+        }
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: -58px;
+            left: 25px;
+            width: 1317px;
+            height: 1042px;
+            background: url(/files/user/img/about/bg_problem.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(-58, 'tb');
+                left: pxtovw(-25, 'tb');
+                width: pxtovw(1317, 'tb');
+                height: pxtovw(1042, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(68, 'sp');
+                height: pxtovw(1209, 'sp');
+                top: pxtovw(620, 'sp');
+                left: pxtovw(25, 'sp');
+                background-image: url(/files/user/img/about/sp/bg_problem_sp.svg);
+            }
+        }
+    }
+
+    &--feature {
+        position: relative;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(164, 'sp');
+        }
+
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: 6px;
+            left: 32px;
+            width: 1472px;
+            height: 794px;
+            background: url(/files/user/img/about/bg_feature.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(6, 'tb');
+                left: pxtovw(32, 'tb');
+                width: pxtovw(1472, 'tb');
+                height: pxtovw(794, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                top: pxtovw(240, 'sp');
+                left: pxtovw(-40, 'sp');
+                width: pxtovw(867, 'sp');
+                height: pxtovw(2154, 'sp');
+                background-image: url(/files/user/img/about/sp/bg_feature_sp.svg);
+            }
+        }
+    }
+
+    &--dev {
+        position: relative;
+        margin-top: 200px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(200, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(220, 'sp');
+        }
+
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: -130px;
+            left: 20px;
+            width: 1316px;
+            height: 644px;
+            background: url(/files/user/img/about/bg_dev.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(-130, 'tb');
+                left: pxtovw(20, 'tb');
+                width: pxtovw(1316, 'tb');
+                height: pxtovw(644, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(556, 'sp');
+                height: pxtovw(534, 'sp');
+                top: pxtovw(-55, 'sp');
+                left: pxtovw(114, 'sp');
+                background-image: url(/files/user/img/about/sp/bg_dev_sp.svg);
+            }
+        }
+    }
+
+    &--character {
+        position: relative;
+        margin-top: 95px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(95, 'tb');
+        }
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(132, 'sp');
+        }
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: 45px;
+            left: 160px;
+            width: 1171px;
+            height: 507px;
+            background: url(/files/user/img/front/bg_character.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(45, 'tb');
+                left: pxtovw(160, 'tb');
+                width: pxtovw(1171, 'tb');
+                height: pxtovw(507, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(867, 'sp');
+                height: pxtovw(631, 'sp');
+                top: 14%;
+                left: -6%;
+                background-image: url(/files/user/img/front/sp/bg_character.svg);
+            }
+        }
+    }
+
+    &--service {
+        position: relative;
+        margin-top: 285px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(285, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(310, 'sp');
+        }
+
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: 64px;
+            left: 32px;
+            width: 1257px;
+            height: 1321px;
+            background: url(/files/user/img/front/bg_service.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(64, 'tb');
+                left: pxtovw(32, 'tb');
+                width: pxtovw(1257, 'tb');
+                height: pxtovw(1321, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                top: pxtovw(-120, 'sp');
+                left: 0;
+                width: pxtovw(182, 'sp');
+                height: pxtovw(2351, 'sp');
+                background-image: url(/files/user/img/front/sp/bg_service.svg);
+            }
+        }
+    }
+
+    &--price {
+        position: relative;
+        margin-top: 260px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(260, 'tb');
+        }
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(308, 'sp');
+        }
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: 5px;
+            left: 155px;
+            width: 1144px;
+            height: 393px;
+            background: url(/files/user/img/front/bg_price.svg) 0 0 no-repeat;
+            background-size: 100% auto;
+            content: '';
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(5, 'tb');
+                left: pxtovw(155, 'tb');
+                width: pxtovw(1144, 'tb');
+                height: pxtovw(393, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                top: pxtovw(55, 'sp');
+                left: pxtovw(34, 'sp');
+                width: pxtovw(747, 'sp');
+                height: pxtovw(498, 'sp');
+                background-image: url(/files/user/img/front/sp/bg_price.svg);
+            }
+        }
+    }
+
+    &--wide {
+        width: 100%;
+        margin-top: 270px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(270, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(162, 'sp');
+        }
+    }
+
+    &--wide-no_margin {
+        width: 100%;
+    }
+
+    &__container {
+        width: 1120px;
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(1120, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(590, 'sp');
+        }
+
+        &--divide {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                flex-direction: column-reverse;
+            }
+
+            @at-root .c-section--dev & {
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            @at-root .front & {
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &--wide {
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            z-index: 1;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 50%;
+                height: 100%;
+                background-color: $theme5;
+                z-index: 0;
+                content: '';
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    width: 100%;
+                    height: 50%;
+                    bottom: initial;
+                }
+            }
+
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                height: 100%;
+                background-color: $theme3;
+                z-index: 0;
+                content: '';
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    width: 100%;
+                    height: 50%;
+                    top: initial;
+                }
+            }
+        }
+    }
+
+    &__head {
+        position: relative;
+        z-index: 1;
+
+        &--op1 {
+            margin-bottom: 65px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-bottom: pxtovw(65, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(110, 'sp');
+                margin-bottom: 0;
+            }
+
+            &:before {
+                position: absolute;
+                top: -30px;
+                left: -38px;
+                width: 55px;
+                height: 55px;
+                background: url(/files/user/img/common/obj/obj_blk_1.svg) 0 0 no-repeat;
+                background-size: 100% auto;
+                z-index: 0;
+                content: '';
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    top: pxtovw(-30, 'tb');
+                    left: pxtovw(-38, 'tb');
+                    width: pxtovw(55, 'tb');
+                    height: pxtovw(55, 'tb');
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    content: none;
+                }
+            }
+
+            &:after {
+                position: absolute;
+                bottom: -53px;
+                right: -53px;
+                width: 86px;
+                height: 86px;
+                background: url(/files/user/img/common/obj/obj_blk_2.svg) 0 0 no-repeat;
+                background-size: 100% auto;
+                z-index: 0;
+                content: '';
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    right: pxtovw(-53, 'tb');
+                    bottom: pxtovw(-53, 'tb');
+                    width: pxtovw(86, 'tb');
+                    height: pxtovw(86, 'tb');
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    right: pxtovw(-40, 'sp');
+                    bottom: pxtovw(-48, 'sp');
+                    width: pxtovw(86, 'sp');
+                    height: pxtovw(86, 'sp');
+                }
+            }
+        }
+
+        &--trial {
+            width: 720px;
+            padding: 157px 120px 157px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(720, 'tb');
+                padding: pxtovw(157, 'tb') pxtovw(120, 'tb') pxtovw(157, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: 100%;
+                padding: pxtovw(158, 'sp') pxtovw(120, 'sp') pxtovw(208 , 'sp');
+            }
+        }
+    }
+
+    &__head-img {
+        position: relative;
+        z-index: 1;
+        width: 400px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(400, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(590, 'sp');
+        }
+
+        &--dev {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(430, 'sp');
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        width: 650px;
+        text-align: left;
+        z-index: 1;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(650, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(590, 'sp');
+        }
+
+        @at-root .c-section--dev & {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(170, 'sp');
+            }
+        }
+
+        &--contact {
+            width: 720px;
+            padding: 157px 120px 157px;
+            text-align: center;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(720, 'tb');
+                padding: pxtovw(157, 'tb') pxtovw(120, 'tb') pxtovw(157, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: 100%;
+                padding: pxtovw(158, 'sp') pxtovw(120, 'sp') pxtovw(208 , 'sp');
+            }
+        }
+    }
+
+    &__ttl {
+        font-family: $ff-ibm;
+        color: $theme3;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            text-align: center;
+            font-size: pxtovw(28, 'sp');
+        }
+
+        &--white {
+            color: $white1;
+        }
+
+        &--sp-left {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__txt {
+        margin-top: 34px;
+        color: $theme1;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.19;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(34, 'tb');
+            font-size: pxtovw(36, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(24, 'sp');
+            text-align: center;
+            font-size: pxtovw(42, 'sp');
+            line-height: 1.5;
+            letter-spacing: .03em;
+        }
+
+        &--white {
+            color: $white1;
+            margin-top: 24px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-top: pxtovw(24, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: 0;
+                font-size: pxtovw(47, 'sp');
+            }
+        }
+
+        &--uline {
+            display: inline-block;
+            margin-top: 55px;
+            padding-bottom: 5px;
+            font-size: 26px;
+            line-height: 1;
+            border-bottom: 4px solid $theme3;
+            letter-spacing: 0;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-top: pxtovw(55, 'tb');
+                padding-bottom: pxtovw(5, 'tb');
+                font-size: pxtovw(28, 'tb');
+                border-bottom: pxtovw(4, 'tb') solid $theme3;
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(660, 'sp');
+                margin-top: pxtovw(80, 'sp');
+                margin-left: pxtovw(-30, 'sp');
+                padding-bottom: pxtovw(4, 'sp');
+                font-size: pxtovw(32, 'sp');
+                border-bottom: pxtovw(4, 'sp') solid $theme3;
+            }
+
+            span {
+                font-size: 40px;
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    font-size: pxtovw(40, 'tb');
+                }
+
+                @media screen and (max-width: #{$breakpoint-sp}px) {
+                    font-size: pxtovw(38, 'sp');
+                }
+            }
+        }
+
+        &--sp-left {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__lead {
+        margin-top: 27px;
+        line-height: 1.875;
+        letter-spacing: 0.01em;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(27, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(20, 'sp');
+            font-size: pxtovw(26, 'sp');
+            line-height: 1.54;
+            text-align: left;
+        }
+
+        &--small {
+            font-size: 14px;
+            letter-spacing: 0.02em;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                font-size: pxtovw(18, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                font-size: pxtovw(24, 'sp');
+                line-height: 1.7;
+            }
+        }
+
+        &--white {
+            color: $white1;
+            text-align: left;
+        }
+
+        & + .c-section__lead {
+            margin-top: 27px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-top: pxtovw(27, 'tb');
+            }
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(38, 'sp');
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(30, 'sp');
+        }
+    }
+
+    &__caution {
+        width: 790px;
+        margin: 30px auto 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        color: #0F1015;
+        text-align: left;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(790, 'tb');
+            margin-top: pxtovw(30, 'tb');
+            font-size: pxtovw(14, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+            margin-top: pxtovw(22, 'sp');
+            font-size: pxtovw(26, 'sp');
+            line-height: 1.62;
+        }
+
+        a {
+            text-decoration: underline;
+
+            @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-milestones
+--------------------------------------------- */
+.c-section-milestones {
+    padding-top: 98px;
+    overflow: hidden;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(98, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(110, 'sp');
+    }
+
+    &__ttl {
+        text-align: center;
+        font-size: pxtorem(26, 'pc');
+        font-weight: 600;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+            margin-bottom: pxtovw(100, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(28, 'sp');
+            margin-bottom: pxtovw(50, 'sp');
+        }
+    }
+
+    &__body {
+        padding: 0 10px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding: 0 pxtovw(10, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: 0 pxtovw(10, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-about
+--------------------------------------------- */
+.c-section-about {
+    margin-top: 200px;
+    padding-top: 160px;
+    padding-bottom: 200px;
+    background-color: $theme1;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        margin-top: pxtovw(200, 'tb');
+        padding-top: pxtovw(160, 'tb');
+        padding-bottom: pxtovw(160, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        margin-top: pxtovw(250, 'sp');
+        padding-top: pxtovw(160, 'sp');
+        padding-bottom: pxtovw(160, 'sp');
+    }
+
+    @at-root .thanks & {
+        margin-top: 0;
+    }
+
+    &__container {
+        width: 620px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(620, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(590, 'sp');
+        }
+    }
+
+    &__ttl {
+        font-size: pxtorem(48, 'pc');
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(48, 'tb');
+            margin-bottom: pxtovw(80, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(52, 'sp');
+            margin-bottom: pxtovw(40, 'sp');
+        }
+    }
+
+    &__ttl-txt {
+        color: $white1;
+    }
+
+    &__ttl-ico {
+        display: inline-block;
+        width: 16px;
+        transform: translateY(-.2em);
+        margin-left: 15px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(16, 'tb');
+            margin-left: pxtovw(15, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(25, 'sp');
+            margin-left: pxtovw(15, 'sp');
+        }
+    }
+
+    &__txt {
+        color: $white1;
+        font-size: pxtorem(26, 'pc');
+        font-weight: 600;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(26, 'sp');
+        }
+    }
+
+    &__txt-small {
+        color: $theme6;
+        font-family: $ff-karla;
+        font-size: pxtorem(18, 'pc');
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(18, 'tb');
+            margin-top: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp');
+            margin-top: pxtovw(20, 'sp');
+        }
+    }
+
+    &__foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(80, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(40, 'sp');
+        }
+    }
+
+    &__btn {
+        width: 240px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(240, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(240, 'sp');
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 5px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-top: pxtovw(5, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: pxtovw(10, 'sp');
+        }
+    }
+
+    &__logo-txt {
+        color: $white1;
+        font-size: pxtorem(14, 'pc');
+        line-height: 1;
+        margin-right: 16px;
+        transform: translateY(2px);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(14, 'tb');
+            margin-right: pxtovw(16, 'tb');
+            transform: translateY(pxtovw(2, 'tb'));
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(18, 'sp');
+        }
+    }
+
+    &__logo-img {
+        width: 130px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(130, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(130, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-access
+--------------------------------------------- */
+.c-section-access {
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 1800px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            flex-direction: column;
+            max-width: initial;
+        }
+    }
+
+    &__contents {
+        margin-right: 177px;
+        transform: translateY(-11px);
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-right: pxtovw(177, 'tb');
+            transform: translateY(pxtovw(-11, 'tb'));
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+            padding: pxtovw(50, 'sp') 10%;
+            margin-right: 0;
+            transform: initial;
+        }
+    }
+
+    &__ttl {
+        font-size: pxtorem(26, 'pc');
+        font-weight: 600;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+            margin-bottom: pxtovw(33, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(26, 'sp');
+            margin-bottom: pxtovw(35, 'sp');
+        }
+    }
+
+    &__txt {
+        font-size: pxtorem(20, 'pc');
+        line-height: 1.4;
+        letter-spacing: .02em;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(18, 'sp');
+        }
+    }
+
+    &__btn {
+        width: 150px;
+        margin-top: 45px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(150, 'tb');
+            margin-top: pxtovw(45, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(225, 'sp');
+            margin-top: pxtovw(30, 'sp');
+        }
+
+
+    }
+
+    &__map {
+        position: relative;
+        width: percentage(840/1440);
+        padding-top: 554px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(840, 'tb');
+            padding-top: pxtovw(554, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: 100%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-slider
+--------------------------------------------- */
+.c-section-slider {
+    padding-top: 180px;
+    padding-bottom: 206px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(180, 'tb');
+        padding-bottom: pxtovw(206, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(180, 'sp');
+        padding-bottom: pxtovw(200, 'sp');
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1550px;
+        width: 100%;
+        padding: 0 55px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            max-width: 1440px;
+            padding: 0 pxtovw(55, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            flex-direction: column;
+            max-width: 750px;
+            padding: 0 pxtovw(50, 'sp');
+        }
+    }
+
+    &__contents {
+        width: 380px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(380, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(600, 'sp');
+        }
+    }
+
+    &__lead {
+        font-size: pxtorem(20, 'pc');
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: .02em;
+        margin-bottom: 57px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(20, 'tb');
+            margin-bottom: pxtovw(57, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(24, 'sp');
+            margin-bottom: pxtovw(40, 'sp');
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        width: 680px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(600, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(600, 'sp');
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            right: -47px;
+            bottom: -46px;
+            width: 182px;
+            height: 182px;
+            background: url(/files/user/img/common/obj/obj_dev_2.svg) 0 0 no-repeat;
+            background-size: 100%;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                right: pxtovw(-47, 'tb');
+                bottom: pxtovw(-46, 'tb');
+                width: pxtovw(182, 'tb');
+                height: pxtovw(182, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                right: pxtovw(-47, 'sp');
+                bottom: pxtovw(-46, 'sp');
+                width: pxtovw(182, 'sp');
+                height: pxtovw(182, 'sp');
+            }
+
+            @at-root .is-marketers & {
+                background-image: url(/files/user/img/common/obj/obj_mkt_2.svg);
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-case
+--------------------------------------------- */
+.c-section-case {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 192px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(180, 'tb');
+        padding-bottom: pxtovw(192, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(150, 'sp');
+        padding-bottom: pxtovw(122, 'sp');
+    }
+    & + & {
+        padding-top: 0;
+        padding-bottom: 200px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-bottom: pxtovw(200, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-bottom: pxtovw(150, 'sp');
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $theme6;
+        content: "";
+        z-index: -1;
+    }
+
+    &__container {
+        max-width: 1220px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            max-width: pxtovw(1220, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            max-width: pxtovw(600, 'sp');
+        }
+    }
+
+    &__head {
+        text-align: center;
+        margin-bottom: 98px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(98, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(50, 'sp');
+        }
+    }
+}
+
+
+/* ---------------------------------------------
+*   c-section-check
+--------------------------------------------- */
+.c-section-check {
+    padding-top: 161px;
+    padding-bottom: 200px;
+    background-color: $theme1;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(161, 'tb');
+        padding-bottom: pxtovw(200, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(161, 'sp');
+        padding-bottom: pxtovw(200, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        background-color: $theme6;
+    }
+
+    &__container {
+        width: 800px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(800, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(600, 'sp');
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            flex-direction: column;
+        }
+    }
+
+    &__head {
+        position: relative;
+        width: 360px;
+        padding-left: 2px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(360, 'tb');
+            padding-left: pxtovw(2, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(600, 'sp');
+            padding-left: pxtovw(2, 'sp');
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: -65px;
+            left: -75px;
+            width: 86px;
+            height: 86px;
+            background: url(/files/user/img/common/obj/obj_gry_2.svg) 0 0 no-repeat;
+            background-size: 100%;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                top: pxtovw(-65, 'tb');
+                left: pxtovw(-75, 'tb');
+                width: pxtovw(86, 'tb');
+                height: pxtovw(86, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                top: pxtovw(-90, 'sp');
+                left: pxtovw(-50, 'sp');
+                width: pxtovw(86, 'sp');
+                height: pxtovw(86, 'sp');
+            }
+
+            @at-root .is-marketers & {
+                background-image: url(/files/user/img/common/obj/obj_mkt_1.svg);
+            }
+        }
+    }
+
+    &__body {
+        width: 320px;
+        padding-top: 7px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(320, 'tb');
+            padding-top: pxtovw(7, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(600, 'sp');
+            padding-top: pxtovw(30, 'sp');
+        }
+    }
+
+    &__foot {
+        margin-top: 105px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(105, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(50, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            margin-top: 156px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                margin-top: pxtovw(156, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                margin-top: pxtovw(75, 'sp');
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-fig
+--------------------------------------------- */
+.c-section-fig {
+    padding-top: 200px;
+    padding-bottom: 192px;
+    background-color: $theme6;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(200, 'tb');
+        padding-bottom: pxtovw(192, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(150, 'sp');
+        padding-bottom: pxtovw(122, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        padding-top: 80px;
+        padding-bottom: 215px;
+        background-color: $white1;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-top: pxtovw(80, 'tb');
+            padding-bottom: pxtovw(215, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-top: pxtovw(80, 'sp');
+            padding-bottom: pxtovw(215, 'sp');
+        }
+    }
+
+    & + & {
+        padding-top: 0;
+        padding-bottom: 200px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-bottom: pxtovw(200, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-bottom: pxtovw(150, 'sp');
+        }
+    }
+
+    &__container {
+        max-width: 1220px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            max-width: pxtovw(1220, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            max-width: pxtovw(600, 'sp');
+        }
+    }
+
+    &__head {
+        text-align: center;
+        margin-bottom: 98px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(98, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(50, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-small
+--------------------------------------------- */
+.c-section-small {
+    padding-top: 83px;
+    padding-bottom: 80px;
+    background-color: $theme2;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(83, 'tb');
+        padding-bottom: pxtovw(80, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(83, 'sp');
+        padding-bottom: pxtovw(80, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        background-color: $theme1;
+        padding-bottom: 93px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-bottom: pxtovw(93, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-bottom: pxtovw(93, 'sp');
+        }
+    }
+
+    &__container {
+        width: 640px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(640, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(640, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            width: 800px;
+            padding-right: 140px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                width: pxtovw(800, 'tb');
+                padding-right: pxtovw(140, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                width: pxtovw(600, 'sp');
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__head {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(30, 'sp');
+        }
+    }
+
+    &__ttl {
+        color: $white1;
+        font-size: pxtorem(20, 'pc');
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: .02em;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(24, 'sp');
+        }
+    }
+
+    &__txt {
+        color: $white1;
+        font-weight: 600;
+        font-size: pxtorem(26, 'pc');
+        line-height: 1.5;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+        }
+
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(26, 'sp');
+        }
+    }
+
+    &__txt-small {
+        font-family: $ff-karla;
+        color: $white1;
+        font-weight: 400;
+        font-size: pxtorem(18, 'pc');
+        line-height: 1.4;
+        margin-top: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(18, 'tb');
+            margin-top: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(18, 'sp');
+            margin-top: pxtovw(30, 'sp');
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(30, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-plan
+--------------------------------------------- */
+.c-section-plan {
+    padding-top: 220px;
+    padding-bottom: 70px;
+    background: linear-gradient(180deg, $theme1 0%, $theme1 52.3%, $white1 52.3%, $white1 100%);
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(220, 'tb');
+        padding-bottom: pxtovw(70, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(240, 'sp');
+        padding-bottom: pxtovw(50, 'sp');
+    }
+
+    @at-root .is-marketers & {
+        background: linear-gradient(180deg, $theme6 0%, $theme6 52.3%, $white1 52.3%, $white1 100%);
+    }
+
+    &__container {
+        max-width: 1660px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            max-width: 1440px;
+            padding-right: pxtovw(15, 'tb');
+            padding-left: pxtovw(15, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            max-width: 1440px;
+            padding-right: pxtovw(15, 'sp');
+            padding-left: pxtovw(15, 'sp');
+        }
+    }
+
+    &__head {
+        text-align: center;
+        margin-bottom: 160px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(160, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(160, 'sp');
+        }
+    }
+
+    &__lead {
+        color: $white1;
+        font-size: pxtorem(26, 'pc');
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: 23px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+            margin-top: pxtovw(23, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(24, 'sp');
+            margin-top: pxtovw(23, 'sp');
+        }
+
+        @at-root .is-marketers & {
+            color: $theme1;
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-simple
+--------------------------------------------- */
+.c-section-simple {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background: $theme3 url(/files/user/img/marketers/bg_pattern.svg) center no-repeat;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        padding-top: pxtovw(80, 'tb');
+        padding-bottom: pxtovw(60, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding-top: pxtovw(80, 'sp');
+        padding-bottom: pxtovw(60, 'sp');
+    }
+
+    &__container {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding-right: pxtovw(10, 'tb');
+            padding-left: pxtovw(10, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-right: pxtovw(10, 'sp');
+            padding-left: pxtovw(10, 'sp');
+        }
+    }
+
+    &__head {
+        text-align: center;
+        margin-bottom: 42px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(42, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(42, 'sp');
+        }
+    }
+
+    &__btn {
+        width: 154px;
+        margin: 0 auto;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            width: pxtovw(154, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: pxtovw(154, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-contact
+--------------------------------------------- */
+.c-section-contact {
+
+    &__cap {
+        color: $theme5;
+        font-size: pxtorem(26, 'pc');
+        line-height: 1.12;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(26, 'tb');
+            margin-bottom: pxtovw(10, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp');
+            margin-bottom: pxtovw(10, 'sp');
+        }
+    }
+
+    &__ttl {
+        font-weight: 600;
+        font-size: pxtorem(72, 'pc');
+        line-height: 1.12;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(72, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(36, 'sp');
+        }
+
+        @at-root .is-developers & {
+            color: $white1;
+        }
+    }
+
+    &__lead {
+        margin-top: 46px;
+        color: $theme5;
+        letter-spacing: .02em;
+        font-weight: 600;
+        font-size: pxtorem(20, 'pc');
+        line-height: 1.4;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(46, 'tb');
+            margin-bottom: pxtovw(30, 'tb');
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(20, 'sp');
+            font-size: pxtovw(24, 'sp');
+            margin-bottom: pxtovw(30, 'sp');
+        }
+    }
+
+    &__txt {
+        margin-top: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-top: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-top: pxtovw(30, 'sp');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-section-form
+--------------------------------------------- */
+.c-section-form {
+    border: 1px solid rgba(141, 144, 158, 0.3);
+    background-color: $theme6;
+    border-radius: 20px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        border-radius: pxtovw(20, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        border-radius: pxtovw(20, 'sp');
+    }
+
+    @at-root .is-developers & {
+        border: none;
+        background-color: $white1;
+    }
+
+
+    &__container {
+        padding: 30px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            padding: pxtovw(30, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: pxtovw(20, 'sp');
+        }
+    }
+
+    &__ttl {
+        text-align: center;
+        font-size: pxtorem(30, 'pc');
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(30, 'tb');
+            margin-bottom: pxtovw(10, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(24, 'sp');
+            margin-bottom: pxtovw(10, 'sp');
+        }
+    }
+}

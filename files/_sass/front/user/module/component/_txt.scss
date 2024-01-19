@@ -1,0 +1,127 @@
+/* ---------------------------------------------
+*   c-txt
+--------------------------------------------- */
+.c-txt {
+    color: $theme5;
+    font-family: $ff-karla;
+    font-size: pxtorem(18, 'pc');
+    font-weight: 400;
+    line-height: 1.4;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        font-size: pxtovw(18, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtovw(27, 'sp');
+    }
+}
+
+/* ---------------------------------------------
+*   c-txt-lead
+--------------------------------------------- */
+.c-txt-lead {
+    width: 620px;
+    padding-right: 15px;
+    font-size: pxtorem(26, 'pc');
+    font-weight: 600;
+    margin: 76px auto 0;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(620, 'tb');
+        padding-right: pxtovw(15, 'tb');
+        font-size: pxtovw(26, 'tb');
+        margin-top: pxtovw(76, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: pxtovw(590, 'sp');
+        padding-right: 0;
+        font-size: pxtovw(26, 'sp');
+        margin-top: pxtovw(30, 'sp');
+    }
+}
+
+/* ---------------------------------------------
+*   c-txt-lead-small
+--------------------------------------------- */
+.c-txt-lead-small {
+    width: 620px;
+    color: $theme5;
+    font-family: $ff-karla;
+    font-size: pxtorem(18, 'pc');
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 21px auto 0;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(620, 'tb');
+        font-size: pxtovw(18, 'tb');
+        margin-top: pxtovw(21, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: pxtovw(590, 'sp');
+        font-size: pxtovw(18, 'sp');
+        margin-top: pxtovw(20, 'sp');
+    }
+}
+
+/* ---------------------------------------------
+*   c-txt-docs
+--------------------------------------------- */
+.c-txt-docs {
+    margin-bottom: 32px;
+    font-family: $ff-karla;
+    font-weight: 400;
+    font-size: pxtorem(18, 'pc');
+    line-height: 1.4;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        margin-bottom: pxtovw(32, 'tb');
+        font-size: pxtovw(18, 'tb');
+    }
+
+    @at-root .is-dark & {
+        color: $white1;
+    }
+
+    &--purple {
+        color: $theme3;
+    }
+
+    &--bold {
+        font-weight: 700;
+    }
+
+    &--small {
+        margin-bottom: 12px;
+        font-size: pxtorem(16, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            margin-bottom: pxtovw(12, 'tb');
+            font-size: pxtovw(16, 'tb');
+        }
+    }
+
+    &--m {
+        font-size: pxtorem(16, 'pc');
+        line-height: 1.5;
+        letter-spacing: -.019em;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            font-size: pxtovw(16, 'tb');
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-txt-attention
+--------------------------------------------- */
+.c-txt-attention {
+    color: $theme4;
+
+    &--purple {
+        color: $theme3;
+    }
+}

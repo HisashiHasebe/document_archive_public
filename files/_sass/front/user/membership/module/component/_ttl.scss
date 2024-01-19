@@ -1,0 +1,83 @@
+/* ---------------------------------------------
+*   c-ttl
+--------------------------------------------- */
+
+/*  c-ttl-1
+--------------------------------------------- */
+.c-ttl-1 {
+    font-size: pxtorem(32, 'pc');
+    font-weight: bold;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        white-space: pre;
+    }
+}
+
+/*  c-ttl-2
+--------------------------------------------- */
+.c-ttl-2 {
+    letter-spacing: -0.02em;
+    text-align: center;
+    font-size: pxtorem(48, 'pc');
+    font-weight: bold;
+    margin-top: pxtorem(16, 'pc');
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem(32, 'pc');
+    }
+
+    &--price {
+        color: $white1;
+
+     @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem(48, 'pc');
+    }
+
+    }
+}
+
+/*  c-ttl-3
+--------------------------------------------- */
+.c-ttl-3 {
+    text-align: center;
+    font-size: pxtorem(32, 'pc');
+    font-weight: bold;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        white-space: nowrap;
+    }
+
+    span {
+        display: inline-block;
+        padding-bottom: pxtorem(16, 'pc');
+        border-bottom: pxtorem(8, 'pc') solid $theme1;
+    }
+}
+
+/*  c-ttl-4
+--------------------------------------------- */
+.c-ttl-4 {
+    text-align: center;
+    font-size: pxtorem(24, 'pc');
+    font-weight: bold;
+    margin-top: pxtorem(64, 'pc');
+    margin-bottom: pxtorem(24, 'pc');
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        text-align: left;
+    }
+
+    &--price {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        color: $white1;
+        margin-top: pxtorem(24, 'pc');
+        margin-bottom: pxtorem(49, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            line-height: 1.66;
+        }
+    }
+}
+

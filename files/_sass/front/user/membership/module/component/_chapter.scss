@@ -1,0 +1,31 @@
+/* ---------------------------------------------
+*   c-chapter
+--------------------------------------------- */
+
+/*  c-chapter-about
+--------------------------------------------- */
+.c-chapter-about {
+    $host: &;
+}
+
+/*  c-chapter-price
+--------------------------------------------- */
+.c-chapter-price {
+    $host: &;
+
+    &__body {
+        padding-right: pxtorem(160, 'pc');
+        padding-left: pxtorem(160, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: pxtovw(-16, 'sp');
+            margin-left: pxtovw(-16, 'sp');
+        }
+    }
+
+    &__figure-img {
+        width: 100%;
+    }
+}

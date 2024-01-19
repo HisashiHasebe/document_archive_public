@@ -1,0 +1,143 @@
+/* ---------------------------------------------
+*   c-card
+--------------------------------------------- */
+.c-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba($theme5, .4);;
+    border-radius: 20px;
+    background-color: $white1;
+    &__image {
+        width: 100%;
+        border-bottom: 1px solid rgba($theme5, .4);
+        border-radius: 20px 20px 0 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        img { border-radius: 20px 20px 0 0; }
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            height: 14vw;
+            max-height: 204px;
+            img { 
+                display: none;
+            }
+        }
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            background: none !important;
+        }
+    }
+    &__body {
+        flex: 1 1 auto;
+        padding: 24px 20px;
+    }
+    &__date {
+        color: $theme5;
+        font-size: .9rem;
+    }
+    &__ttl {
+        font-size: pxtorem(24, 'pc');
+        font-weight: bold;
+    }
+    &__txt {
+        color: $theme5;
+        font-size: .9rem;
+        .c-card__ttl + & {
+            padding-top: 20px;
+        }
+    }
+    &__foot {
+        padding: 20px 20px 24px;
+        .c-card__body + & {
+            padding-top: 0;
+        }
+    }
+}
+
+.c-card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        .c-card:not(:first-child) {
+            margin-top: 4vw;
+        }
+    }
+    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+        &--col3 {
+            .c-card {
+                width: 32%;
+                &:not(:nth-of-type(3n+1)) {
+                    margin-left: 2%;
+                }
+                &:nth-of-type(n+4) {
+                    margin-top: 4%;
+                }
+            }
+        }
+    }
+
+
+    &--obj {
+        .c-card {
+            &:first-child {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: -47px;
+                    left: -46px;
+                    width: 182px;
+                    height: 182px;
+                    background: url(/files/user/img/common/obj/obj_dev_2.svg) 0 0 no-repeat;
+                    background-size: 100%;
+                    @media screen and (max-width: #{$breakpoint-tb}px) {
+                        top: pxtovw(-47, 'tb');
+                        left: pxtovw(-46, 'tb');
+                        width: pxtovw(182, 'tb');
+                        height: pxtovw(182, 'tb');
+                    }
+                    @media screen and (max-width: #{$breakpoint-sp}px) {
+                        top: pxtovw(-47, 'sp');
+                        left: pxtovw(-46, 'sp');
+                        width: pxtovw(182, 'sp');
+                        height: pxtovw(182, 'sp');
+                    }
+                    @at-root .is-marketers & {
+                        background-image: url(/files/user/img/common/obj/obj_mkt_2.svg);
+                    }
+                }
+            }
+            &:last-child {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    right: -65px;
+                    bottom: -55px;
+                    width: 86px;
+                    height: 86px;
+                    background: url(/files/user/img/common/obj/obj_dev_1.svg) 0 0 no-repeat;
+                    background-size: 100%;
+                    @media screen and (max-width: #{$breakpoint-tb}px) {
+                        right: pxtovw(-65, 'tb');
+                        bottom: pxtovw(-55, 'tb');
+                        width: pxtovw(86, 'tb');
+                        height: pxtovw(86, 'tb');
+                    }
+                    @media screen and (max-width: #{$breakpoint-sp}px) {
+                        right: pxtovw(-65, 'sp');
+                        bottom: pxtovw(-55, 'sp');
+                        width: pxtovw(86, 'sp');
+                        height: pxtovw(86, 'sp');
+                    }
+                    @at-root .is-marketers & {
+                        background-image: url(/files/user/img/common/obj/obj_mkt_1.svg);
+                    }
+                }
+            }
+        }
+    }
+}
+

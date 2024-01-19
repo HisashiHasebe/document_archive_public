@@ -1,0 +1,317 @@
+/* ---------------------------------------------
+*   c-btn
+--------------------------------------------- */
+.c-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid $theme1;
+    color: $theme1;
+    font-size: pxtorem(14, 'pc');
+    transition: background-color .3s, color .3s;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        height: pxtovw(40, 'tb');
+        border-radius: pxtovw(20, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        height: pxtovw(50, 'sp');
+        border-radius: pxtovw(25, 'sp');
+    }
+
+    &:hover {
+        background-color: $theme1;
+        color: $white1;
+    }
+
+    &--l {
+        height: 48px;
+        border-radius: 24px;
+        font-size: pxtorem(16, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            height: pxtovw(48, 'tb');
+            border-radius: pxtovw(24, 'tb');
+            font-size: pxtovw(16, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            height: pxtovw(90, 'sp');
+            border-radius: pxtovw(45, 'sp');
+            font-size: pxtovw(32, 'sp');
+        }
+    }
+
+    &--kv-front {
+        height: 70px;
+        border-radius: 40px;
+        font-size: pxtorem(20, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            height: pxtovw(70, 'tb');
+            border-radius: pxtovw(40, 'tb');
+            font-size: pxtovw(20, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            height: pxtovw(80, 'sp');
+            border-radius: pxtovw(40, 'sp');
+            font-size: pxtovw(30, 'sp');
+        }
+    }
+
+    &--wide {
+        height: 80px;
+        border-radius: 40px;
+        font-size: pxtorem(18, 'pc');
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            height: pxtovw(80, 'tb');
+            border-radius: pxtovw(40, 'tb');
+            font-size: pxtovw(18, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            height: pxtovw(80, 'sp');
+            border-radius: pxtovw(40, 'sp');
+            font-size: pxtovw(28, 'sp');
+        }
+    }
+
+    &--white {
+        border-color: $white1;
+        color: $white1;
+
+        &:hover {
+            background-color: $white1;
+            color: $theme1;
+        }
+    }
+
+    &--white2 {
+        border-color: $white1;
+        color: $theme1;
+        background-color: $white1;
+
+        &:hover {
+            background-color: $theme3;
+            color: $white1;
+            border-color: $theme3;
+        }
+    }
+
+    &--white3 {
+        border-color: $white1;
+        color: $theme1;
+        background-color: $white1;
+
+        &:hover {
+            background-color: $theme5;
+            color: $white1;
+            border-color: $theme5;
+        }
+    }
+
+    &--orn {
+        border-color: $theme4;
+        color: $white1;
+        background-color: $theme4;
+
+        &:hover {
+            background-color: transparent;
+            color: $theme4;
+        }
+    }
+
+    &--google {
+        border-color: rgb(221, 75, 57);
+        color: rgb(221, 75, 57);
+
+        &:hover {
+            background-color: rgb(221, 75, 57);
+            color: $white1;
+        }
+    }
+
+    &--dev {
+        border-color: $theme2;
+        color: $white1;
+        background-color: $theme2;
+
+        &:hover {
+            background-color: $white1;
+            color: $theme2;
+        }
+    }
+
+    &--mkt {
+        border-color: $theme3;
+        color: $white1;
+        background-color: $theme3;
+
+        &:hover {
+            background-color: $white1;
+            color: $theme3;
+        }
+    }
+
+    &--mkt-white {
+        border-color: $theme3;
+        color: $theme3;
+        background-color: $white1;
+
+        &:hover {
+            background-color: transparent;
+            color: $white1;
+            background-color: $theme3;
+        }
+    }
+
+    &__txt {
+        font-family: $ff-ibm;
+        font-weight: 500;
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            font-size: pxtovw(20, 'sp');
+        }
+
+        &--bold {
+            font-weight: 600;
+        }
+
+        &--midium {
+            font-size: 18px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                font-size: pxtovw(18, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                font-size: pxtovw(28, 'sp');
+            }
+        }
+
+        &--large {
+            font-size: 20px;
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                font-size: pxtovw(20, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                font-size: pxtovw(30, 'sp');
+            }
+        }
+
+        &--sp-n {
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                line-height: 1;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+*   c-btn-toggle
+--------------------------------------------- */
+.c-btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 275px;
+    height: 40px;
+    border: 1px solid rgba($theme5, .4);
+    border-radius: 20px;
+
+    @media screen and (max-width: #{$breakpoint-tb}px) {
+        width: pxtovw(275, 'tb');
+        height: pxtovw(40, 'tb');
+        border-radius: pxtovw(20, 'tb');
+    }
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        width: pxtovw(300, 'sp');
+        height: pxtovw(40, 'sp');
+        border-radius: pxtovw(20, 'sp');
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        color: $white1;
+        font-family: $ff-inter;
+        font-size: pxtorem(14, 'pc');
+        line-height: 1.21;
+        padding: 0 15px;
+
+        @media screen and (max-width: #{$breakpoint-tb}px) {
+            height: pxtovw(40, 'tb');
+            font-size: pxtovw(14, 'tb');
+            padding: 0 pxtovw(15, 'tb');
+        }
+
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            height: pxtovw(40, 'sp');
+            font-size: pxtovw(16, 'sp');
+            padding: 0 pxtovw(15, 'sp');
+        }
+
+        @include hover-opacity();
+
+        @at-root .is-marketers & {
+            color: $theme1;
+        }
+
+        &--current {
+            position: relative;
+            height: 40px;
+            padding-left: 30px;
+            border-radius: 20px;
+            background-color: $theme2;
+            transform: translateX(-1px);
+
+            @media screen and (max-width: #{$breakpoint-tb}px) {
+                height: pxtovw(40, 'tb');
+                padding-left: pxtovw(30, 'tb');
+                border-radius: pxtovw(20, 'tb');
+            }
+
+            @media screen and (max-width: #{$breakpoint-sp}px) {
+                height: pxtovw(40, 'sp');
+                padding-left: pxtovw(30, 'sp');
+                border-radius: pxtovw(20, 'sp');
+            }
+
+            @at-root .is-marketers & {
+                color: $white1;
+                background-color: $theme3;
+                transform: translateX(1px);
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 16px;
+                width: 6px;
+                height: 6px;
+                box-shadow: 0px 0px 4px $white1;
+                border-radius: 50%;
+                background-color: $white1;
+                transform: translateY(-50%);
+
+                @media screen and (max-width: #{$breakpoint-tb}px) {
+                    left: pxtovw(16, 'tb');
+                    width: pxtovw(6, 'tb');
+                    height: pxtovw(6, 'tb');
+                    box-shadow: 0 0 pxtovw(4, 'tb') $white1;
+                }
+            }
+        }
+    }
+}
